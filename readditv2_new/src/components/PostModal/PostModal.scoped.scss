@@ -1,0 +1,72 @@
+.card-modal {
+  background: #ffffff;
+
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+  top: 90px;
+  max-width: 584px;
+  width: 100%;
+  overflow-y: hidden;
+  border-radius: 6px 6px 6px 6px;
+  padding: 15px;
+}
+.comment-submit-container {
+  width: 100%;
+  button {
+    float: right;
+  }
+}
+.modal-wrapper {
+  width: 100%;
+
+  gap: 2px;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 1rem;
+  overflow-y: auto;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 5;
+  .card-title {
+    line-height: 20px;
+  }
+
+  .card-author {
+    color: #bcbcbc;
+  }
+
+  .card-content {
+    line-height: 18px;
+    opacity: 0.75;
+    font-size: 14px;
+    color: #2b2b2b;
+  }
+}
+.close-icon {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.header-container {
+  display: flex;
+}
+.vote-content-container {
+  display: flex;
+  align-items: center;
+  .vote-container {
+    margin-right: 0.5rem;
+  }
+}

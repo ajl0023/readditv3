@@ -1,0 +1,21 @@
+.vote-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+  .vote-item {
+    &:not(:last-child) {
+      margin-right: 2px;
+    }
+  }
+}
+.icon-container {
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  svg {
+    display: block;
+  }
+}

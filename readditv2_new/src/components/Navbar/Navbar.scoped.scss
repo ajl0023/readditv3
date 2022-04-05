@@ -1,0 +1,116 @@
+.navbar-wrapper {
+  justify-content: center;
+
+  align-items: center;
+  background-color: white;
+  display: flex;
+  top: 0;
+
+  z-index: 2;
+
+  position: sticky;
+
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+.navbar-content {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0.5rem;
+  justify-content: space-between;
+
+  display: flex;
+
+  align-items: center;
+  .logo {
+    color: #f06c00;
+    text-decoration: none;
+  }
+}
+
+.auth-button-container-navbar {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+}
+
+.auth-button-container-navbar * {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  padding: 3px 12px;
+  text-align: center;
+  border-radius: 3px;
+  line-height: 24px;
+}
+
+.auth-button-container-navbar :first-child {
+  white-space: nowrap;
+  margin-right: 5px;
+  background-color: white;
+  border: 1px solid #f06c00;
+  color: #f06c00;
+}
+
+.auth-button-container-navbar :nth-child(2) {
+  white-space: nowrap;
+  background-color: #f06c00;
+  border: 1px solid #f06c00;
+  color: white;
+}
+
+.navbar-profile-container:hover {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar-profile-container {
+  border: 1px solid white;
+  padding: 10px 10px;
+  border-radius: 5px;
+
+  display: flex;
+  background-color: white;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+.user-wrapper {
+  font-size: 12px;
+  position: relative;
+  .drop-down-container {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    .drop-down-triangle {
+      margin-left: 10px;
+    }
+    .drop-down-item {
+      cursor: pointer;
+      padding: 5px;
+    }
+  }
+}
+.user-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px 4px 0px 0px;
+  .username {
+    margin-right: 10px;
+  }
+
+  .user-profile-image-container {
+    width: 20px;
+    height: 20px;
+    svg {
+      display: block;
+    }
+  }
+}
+/*# sourceMappingURL=myApp.css.map */
