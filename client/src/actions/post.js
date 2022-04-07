@@ -1,4 +1,5 @@
 import axios from "axios";
+
 import { normalizeData } from "../utils";
 function nestComments(comments, cache = {}, final = []) {
   for (let i = 0; i < comments.length; i++) {
@@ -20,9 +21,10 @@ export function fetchPosts(sort) {
     dispatch({
       type: "FETCH_POSTS",
     });
+
     let fetch_url = sort
       ? axios.get(`/api/posts?sort=${sort}`)
-      : axios.get("/api/posts");
+      : axios.get(`/api/posts`);
 
     const data = await fetch_url;
 

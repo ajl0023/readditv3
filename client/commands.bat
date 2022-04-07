@@ -1,1 +1,1 @@
-git add . && git commit -m "updated netlify.toml" && git push origin main
+git add . && git commit -m "connecting to new db host" && git push origin main

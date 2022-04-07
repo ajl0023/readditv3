@@ -10,7 +10,7 @@ function handleSubmit(type, post_id, parent_comment, content) {
 
   return async (dispatch, getState) => {
     try {
-      const req = await axios.post("/api/comments", req_body);
+      const req = await axios.post(`/api/comments`, req_body);
       const new_comment = req.data;
       new_comment.comments = [];
       dispatch({
