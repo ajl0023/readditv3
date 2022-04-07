@@ -1,1 +1,1 @@
-git add . && git commit -m "updated netlify.toml" && git push origin main
+git add . && git commit -m "updated env vars" && git push origin main
