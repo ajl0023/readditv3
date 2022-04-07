@@ -15,9 +15,9 @@ export default function Home(props) {
   const posts = useSelector(posts_selector);
   const location = useLocation();
   const navigate = useNavigate();
-  console.log(posts.initial_load);
+
   useEffect(() => {
-    console.log(234234);
+
     if (location.pathname === "/" && !posts.initial_load) {
       const params = new URLSearchParams(location.search);
       const sort = params.get("sort");

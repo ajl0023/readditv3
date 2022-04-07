@@ -37,7 +37,7 @@ const PostModal = (props) => {
     dispatch({
       type: "POST_DESELECTED",
     });
-    console.log(current_sort);
+
     navigate(current_sort ? `/?sort=${current_sort}` : "/");
   });
   useEffect(() => {

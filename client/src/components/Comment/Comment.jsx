@@ -58,8 +58,6 @@ export default function Comment(props) {
             </div>
             <div className="text-content-container">
               <div className="text-content">{props.comment.content}</div>
-              parent:{props.comment.parent_comment_id}{" "}
-              <div>uid :{props.comment.uid}</div>
             </div>
           </div>
 

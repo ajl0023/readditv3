@@ -13,12 +13,7 @@ module.exports = (router) => {
     const req_body = req.body;
     const entity_type = req.body.type;
     const entity_column = req.body.type + "_id";
-    console.log({
-      score: req.body.score,
-      [entity_column]: entity_id,
 
-      user_id: "b6366322-abbc-11ec-9422-7085c27ba6fd",
-    });
     const inserted = await Votes.query()
 
       .insert({
